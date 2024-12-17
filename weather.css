@@ -1,0 +1,121 @@
+/* Reset */
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Arial', sans-serif;
+   background: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Sky blue gradient */
+   color: #333;
+}
+
+/* Header */
+.header {
+   text-align: center;
+   font-size: 64px;
+   color: white;
+   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+   margin-top: 20px;
+   margin-bottom: 40px;
+   font-family: 'Verdana', sans-serif;
+   letter-spacing: 2px;
+}
+
+/* Container */
+.container {
+   background: rgba(255, 255, 255, 0.85); /* Slight transparency */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   width: 60%;
+   height: auto;
+   padding: 40px;
+   border-radius: 20px;
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Search bar */
+.search-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+   gap: 15px;
+}
+
+.search {
+   height: 45px;
+   width: 300px;
+   padding: 0 15px;
+   border: 2px solid #ccc;
+   border-radius: 30px;
+   font-size: 18px;
+   outline: none;
+   transition: all 0.3s ease;
+}
+
+.search:focus {
+   border-color: #007BFF;
+   box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+.search-btn {
+   background: linear-gradient(to right, #007BFF, #0056b3);
+   color: white;
+   height: 45px;
+   width: 120px;
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+   background: linear-gradient(to right, #0056b3, #003d80);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+   transform: scale(1.05);
+}
+
+/* Weather information */
+.weather-info {
+   text-align: center;
+   font-family: 'Arial', sans-serif;
+   animation: fadeIn 1.5s ease-in-out;
+}
+
+.loc {
+   font-size: 26px;
+   font-weight: bold;
+   color: #444;
+   margin-bottom: 20px;
+}
+
+.ten {
+   font-size: 48px;
+   font-weight: bold;
+   color: #222;
+   margin-bottom: 20px;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.wind, .addressnepal {
+   font-size: 22px;
+   color: #555;
+   margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+  
